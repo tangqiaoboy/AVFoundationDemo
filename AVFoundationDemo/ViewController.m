@@ -38,13 +38,17 @@
     [_session addInput:_videoInput];
     [_session addOutput:_frameOutput];
 
+    [_frameOutput setSampleBufferDelegate:self queue:dispatch_get_main_queue()];
     [_session startRunning];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+}
+
+- (void)captureOutput:(AVCaptureOutput *)captureOutput didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection {
+
 }
 
 @end
