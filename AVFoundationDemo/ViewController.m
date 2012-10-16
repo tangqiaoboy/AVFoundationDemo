@@ -62,7 +62,15 @@
     CVPixelBufferRef pb = CMSampleBufferGetImageBuffer(sampleBuffer);
     CIImage * ciImage = [CIImage imageWithCVPixelBuffer:pb];
 
-    CGImageRef ref = [self.context createCGImage:ciImage fromRect:ciImage.extent];
+    // add filter
+    CIFilter * filter = [CIFilter filterWithName:@"CIHueAdjust"];
+    [filter setDefaults];
+    [filter setValue:ciImage forKey:@"inputImage"];
+    [filter setValue:@(2.0) forKey:@"inputAngle"];
+    CIImage * result = [filter valueForKey:@"outputImage"];
+
+    // show result
+    CGImageRef ref = [self.context createCGImage:result fromRect:ciImage.extent];
     _imageView.image = [UIImage imageWithCGImage:ref scale:1.0 orientation:(UIImageOrientationRight)];
     CFRelease(ref);
 }
