@@ -23,6 +23,11 @@
 		45D07819162D4B4E00E9E39D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D077F4162D4B4E00E9E39D /* Foundation.framework */; };
 		45D07821162D4B4F00E9E39D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 45D0781F162D4B4F00E9E39D /* InfoPlist.strings */; };
 		45D07824162D4B4F00E9E39D /* AVFoundationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D07823162D4B4F00E9E39D /* AVFoundationDemoTests.m */; };
+		45D0782E162D4B7200E9E39D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0782D162D4B7200E9E39D /* AVFoundation.framework */; };
+		45D07833162D4B9000E9E39D /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D0782F162D4B9000E9E39D /* CoreAudio.framework */; };
+		45D07834162D4B9000E9E39D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D07830162D4B9000E9E39D /* CoreImage.framework */; };
+		45D07835162D4B9000E9E39D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D07831162D4B9000E9E39D /* CoreMedia.framework */; };
+		45D07836162D4B9000E9E39D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45D07832162D4B9000E9E39D /* CoreVideo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		45D07820162D4B4F00E9E39D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		45D07822162D4B4F00E9E39D /* AVFoundationDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AVFoundationDemoTests.h; sourceTree = "<group>"; };
 		45D07823162D4B4F00E9E39D /* AVFoundationDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AVFoundationDemoTests.m; sourceTree = "<group>"; };
+		45D0782D162D4B7200E9E39D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		45D0782F162D4B9000E9E39D /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		45D07830162D4B9000E9E39D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		45D07831162D4B9000E9E39D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		45D07832162D4B9000E9E39D /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +75,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45D07833162D4B9000E9E39D /* CoreAudio.framework in Frameworks */,
+				45D07834162D4B9000E9E39D /* CoreImage.framework in Frameworks */,
+				45D07835162D4B9000E9E39D /* CoreMedia.framework in Frameworks */,
+				45D07836162D4B9000E9E39D /* CoreVideo.framework in Frameworks */,
+				45D0782E162D4B7200E9E39D /* AVFoundation.framework in Frameworks */,
 				45D077F3162D4B4E00E9E39D /* UIKit.framework in Frameworks */,
 				45D077F5162D4B4E00E9E39D /* Foundation.framework in Frameworks */,
 				45D077F7162D4B4E00E9E39D /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +121,11 @@
 		45D077F1162D4B4E00E9E39D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				45D0782F162D4B9000E9E39D /* CoreAudio.framework */,
+				45D07830162D4B9000E9E39D /* CoreImage.framework */,
+				45D07831162D4B9000E9E39D /* CoreMedia.framework */,
+				45D07832162D4B9000E9E39D /* CoreVideo.framework */,
+				45D0782D162D4B7200E9E39D /* AVFoundation.framework */,
 				45D077F2162D4B4E00E9E39D /* UIKit.framework */,
 				45D077F4162D4B4E00E9E39D /* Foundation.framework */,
 				45D077F6162D4B4E00E9E39D /* CoreGraphics.framework */,

@@ -10,6 +10,11 @@
 
 @interface ViewController ()
 
+@property (nonatomic, strong) AVCaptureSession * session;
+@property (nonatomic, strong) AVCaptureDevice * videoDevice;
+@property (nonatomic, strong) AVCaptureDeviceInput * videoInput;
+@property (nonatomic, strong) AVCaptureVideoDataOutput * frameOutput;
+
 @end
 
 @implementation ViewController
@@ -18,6 +23,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
