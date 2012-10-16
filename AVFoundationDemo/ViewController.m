@@ -22,8 +22,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    
+
+    // Session
+    _session = [[AVCaptureSession alloc] init];
+    _session.sessionPreset = AVCaptureSessionPreset352x288;
+
+    // Input
+    _videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    _videoInput = [AVCaptureDeviceInput deviceInputWithDevice:_videoDevice error:nil];
+
+    // Output
+    _frameOutput = [[AVCaptureVideoDataOutput alloc] init];
+    _frameOutput.videoSettings = @{(id)kCVPixelBufferPixelFormatTypeKey : @(kCVPixelFormatType_32BGRA)};
+
+    [_session addInput:_videoInput];
+    [_session addOutput:_frameOutput];
+
+    [_session startRunning];
 }
 
 - (void)didReceiveMemoryWarning
